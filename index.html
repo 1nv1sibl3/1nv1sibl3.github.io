@@ -51,6 +51,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="writeups.html" data-route="writeups">Writeups</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -70,7 +71,7 @@
           <div class="hero-cta">
             <a class="btn primary" href="https://discordapp.com/users/904280755734196224" target="_blank"
               rel="noreferrer">Let's collaborate</a>
-            <a class="btn ghost" href="src/pdf/OmHonrao.pdf" target="_blank" rel="noreferrer">Download resume</a>
+            <a class="btn ghost" href="writeups.html">Read writeups</a>
           </div>
           <ul class="hero-tags">
             <li><a href="https://blitzhack.xyz" target="_blank" rel="noreferrer">Team BlitzHack · Top 5 CTF team in India</a></li>
@@ -78,29 +79,105 @@
             <li>Host of OSCTF & BlitzCTF · 4k+ hackers between both events</li>
           </ul>
           <div class="stat-grid">
-            <article>
+            <article class="tilt-card">
               <span class="stat">4+ yrs</span>
               <p>Shipping security + gaming automation stacks</p>
             </article>
-            <article>
+            <article class="tilt-card">
               <span class="stat">140k+</span>
               <p>Community-first Minecraft dev & live events operations</p>
             </article>
-            <article>
+            <article class="tilt-card">
               <span class="stat">Goodies & cash</span>
               <p>Podium finishes across India's flagship CTF circuit</p>
             </article>
           </div>
         </div>
         <div class="hero-visual">
-          <div class="hero-card">
+          <div class="hero-card tilt-card">
             <div class="hero-card__badge">Live Ops</div>
             <img src="src/png/om-bsides.png" alt="Om Honrao aka Inv1s1bl3" />
             <div class="hero-card__info">
               <p>Currently architecting <strong>TourneyPlus.xyz</strong>, an esports tournament manager gearing up to be registered as a company.</p>
             </div>
           </div>
+          <div class="hero-orbs" aria-hidden="true">
+            <span class="orb orb-one"></span>
+            <span class="orb orb-two"></span>
+            <span class="orb orb-three"></span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section command-center" id="command">
+      <div class="container command-grid">
+        <article class="command-console tilt-card" aria-live="polite">
+          <header class="console-header">
+            <span class="pulse"></span>
+            Live Terminal
+          </header>
+          <div class="console-screen" id="console-screen">
+            <p>&gt; Boot sequence complete. Awaiting input...</p>
+          </div>
+          <form class="console-form" id="console-form">
+            <span>&gt;</span>
+            <input type="text" id="console-input" placeholder="try: scan, creds, ops, stacks, ping" autocomplete="off" />
+            <button type="submit">run</button>
+          </form>
+          <div class="command-hints">
+            <button type="button" data-command="scan">scan</button>
+            <button type="button" data-command="creds">creds</button>
+            <button type="button" data-command="ops">ops</button>
+            <button type="button" data-command="stacks">stacks</button>
+            <button type="button" data-command="ping">ping</button>
+          </div>
+        </article>
+        <article class="intel-panel tilt-card">
+          <p class="label">Quick intel</p>
+          <ul class="intel-list">
+            <li>
+              <div>
+                <strong>CTF uptime</strong>
+                <p>4+ yrs solving, hosting, mentoring.</p>
+              </div>
+              <span>99.9%</span>
+            </li>
+            <li>
+              <div>
+                <strong>CTF nodes</strong>
+                <p>OSCTF · BlitzCTF · Bsides Mumbai · DevCTF</p>
+              </div>
+              <span>ACTIVE</span>
+            </li>
+            <li>
+              <div>
+                <strong>Minecraft infra</strong>
+                <p>Capital Realm, Among Us India, plugin pilot</p>
+              </div>
+              <span>140k+</span>
+            </li>
+          </ul>
+          <div class="intel-grid">
+            <div class="intel-node" data-signal="ctf">
+              <span>CTF</span>
+              <small>Top 5 team</small>
+            </div>
+            <div class="intel-node" data-signal="esports">
+              <span>Ops</span>
+              <small>TourneyPlus</small>
+            </div>
+            <div class="intel-node" data-signal="minecraft">
+              <span>MC</span>
+              <small>PluginPilot</small>
+            </div>
+            <div class="intel-node" data-signal="automation">
+              <span>Auto</span>
+              <small>Bots & scripts</small>
+            </div>
+          </div>
+          <p class="intel-tip">Hover nodes to pulse; more intel unlocks via commands.</p>
+        </article>
       </div>
     </section>
 
@@ -128,7 +205,7 @@
             </p>
           </div>
           <div class="about-cards">
-            <article>
+            <article class="tilt-card">
               <p class="label">Focus areas</p>
               <ul>
                 <li>Binary exploitation & reverse engineering</li>
@@ -137,7 +214,7 @@
                 <li>Minecraft & Discord ecosystems</li>
               </ul>
             </article>
-            <article>
+            <article class="tilt-card">
               <p class="label">Currently working on</p>
               <ul>
                 <li>TourneyPlus.xyz – esports manager platform</li>
@@ -145,7 +222,7 @@
                 <li>Deep-diving full-stack dev while prepping for JEE</li>
               </ul>
             </article>
-            <article>
+            <article class="tilt-card">
               <p class="label">Community impact</p>
               <ul>
                 <li>4k+ hackers joined OSCTF & BlitzCTF (AlteredSecurity ×2, OffSec, OtterSec, RedTeamGarage, GiveMyCertificate)</li>
@@ -165,7 +242,7 @@
           <h2>Technical toolkit</h2>
         </div>
         <div class="skills-grid">
-          <article>
+          <article class="tilt-card">
             <p class="label">Offensive security</p>
             <ul class="chip-list">
               <li>Reverse engineering</li>
@@ -174,7 +251,7 @@
               <li>Threat modeling</li>
             </ul>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Programming & tooling</p>
             <ul class="chip-list">
               <li>Python</li>
@@ -185,7 +262,7 @@
               <li>Git & GitHub</li>
             </ul>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Systems & networking</p>
             <ul class="chip-list">
               <li>Linux</li>
@@ -194,7 +271,7 @@
               <li>Automation pipelines</li>
             </ul>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Creative builds</p>
             <ul class="chip-list">
               <li>Minecraft server & plugin development</li>
@@ -214,32 +291,32 @@
           <h2>Scoreboard highlights</h2>
         </div>
         <div class="achievement-grid">
-          <article>
+          <article class="tilt-card">
             <p class="label">Bsides Mumbai CTF</p>
             <h3>#1 · Onsite conference winner</h3>
             <p>Topped the Bsides Mumbai conference CTF, taking home exclusive goodies, clout and prize money.</p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Team BlitzHack</p>
             <h3>Top 5 in India</h3>
             <p>Consistently ranked among the best Indian CTF teams with strong finishes across the calendar.</p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">InCTFj</p>
             <h3>#9 nationwide</h3>
             <p>Placed 9th out of 100k+ students in India's toughest junior CTF by Team bi0s.</p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">VishwaCTF</p>
             <h3>International Top 7</h3>
             <p>Our team placed 7th globally in the VIIT Pune contest and bagged cash + swags.</p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Podiums streak</p>
             <h3>#2 · 07CTF, BDSec CTF, Pragyan CTF</h3>
             <p>Multiple silver finishes with strong binary and reverse chains.</p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">OSCTF host</p>
             <h3>CTFtime weight 23.20</h3>
             <p>
@@ -247,7 +324,7 @@
               hackers. <a class="inline-link" href="https://ctftime.org/event/2416" target="_blank" rel="noreferrer">View scoreboard</a>
             </p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">BlitzCTF host</p>
             <h3>Future weight 30.64</h3>
             <p>
@@ -255,7 +332,7 @@
                 href="https://2025.blitzhack.xyz" target="_blank" rel="noreferrer">Visit hub</a>
             </p>
           </article>
-          <article>
+          <article class="tilt-card">
             <p class="label">Google Skill Badges</p>
             <h3>100+ quests completed</h3>
             <p>
@@ -275,7 +352,7 @@
           <h2>Builds & experiments</h2>
         </div>
         <div class="projects-grid">
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Product build</p>
               <div class="tag-pill">In progress</div>
@@ -289,7 +366,7 @@
               <a href="https://tourneyplus.xyz" target="_blank" rel="noreferrer">Visit site</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Community engineering</p>
               <div class="tag-pill">4k+ hackers</div>
@@ -304,7 +381,7 @@
               <a href="https://2025.blitzhack.xyz" target="_blank" rel="noreferrer">BlitzCTF hub</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">DevOps for Minecraft</p>
               <div class="tag-pill">Modrinth</div>
@@ -318,7 +395,7 @@
               <a href="https://modrinth.com/plugin/pluginpilot" target="_blank" rel="noreferrer">View on Modrinth</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Automation</p>
               <div class="tag-pill">Python</div>
@@ -332,7 +409,7 @@
               <a href="https://github.com/1nv1sibl3/Inv1s1bl3_Discord_Bot" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Automation</p>
               <div class="tag-pill">FinOps</div>
@@ -346,7 +423,7 @@
               <a href="https://github.com/1nv1sibl3/Invoices-Bot" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Theme dev</p>
               <div class="tag-pill">Open source</div>
@@ -360,7 +437,7 @@
               <a href="https://2025.blitzhack.xyz" target="_blank" rel="noreferrer">Live demo</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Challenge archive</p>
               <div class="tag-pill">55 challs</div>
@@ -373,7 +450,7 @@
               <a href="https://github.com/1nv1sibl3/OS-CTF" target="_blank" rel="noreferrer">GitHub archive</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Challenge archive</p>
               <div class="tag-pill">67 challs</div>
@@ -386,7 +463,7 @@
               <a href="https://github.com/1nv1sibl3/BlitzCTF-2025-Challenge-Archive" target="_blank" rel="noreferrer">GitHub archive</a>
             </div>
           </article>
-          <article>
+          <article class="tilt-card">
             <div class="project-top">
               <p class="label">Discord R&D</p>
               <div class="tag-pill">Private</div>

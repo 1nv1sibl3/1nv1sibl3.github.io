@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inv1s1bl3 | Writeups hub regrouping Bsides Mumbai 2025 & DevCTF solutions." />
+  <title>Inv1s1bl3 · Writeups</title>
+  <link rel="icon" type="image/x-icon" href="src/png/editbit.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Inv1s1bl3 brand">
+      &lt;inv1s1bl3 /&gt;
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="writeups.html" data-route="writeups" class="active">Writeups</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeups-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">&lt;/Writeups&gt;</p>
+          <h1>Playbooks & Payloads</h1>
+          <p class="lede">
+            A living collection of my CTF solutions — straight from the repos, rendered here with zero context-switching.
+            Each challenge card loads the full markdown so you can read, search and share without leaving the site.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="https://github.com/1nv1sibl3" target="_blank" rel="noreferrer">View on GitHub</a>
+            <a class="btn ghost" href="index.html#projects">Back to projects</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card tilt-card">
+            <div class="hero-card__badge">Writeups</div>
+            <div class="hero-card__info">
+              <p>Bsides Mumbai 2025 · DevCTF · More coming soon.</p>
+            </div>
+          </div>
+          <div class="hero-orbs" aria-hidden="true">
+            <span class="orb orb-one"></span>
+            <span class="orb orb-two"></span>
+            <span class="orb orb-three"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="writeups">
+      <div class="container writeups-layout">
+        <aside class="writeups-aside tilt-card" id="writeups-event-list">
+          <p class="label">Events</p>
+        </aside>
+        <div class="writeups-content" id="writeups-app">
+          <div class="writeups-empty tilt-card">
+            <p>Select an event to load every challenge writeup.</p>
+            <p class="hint">Content renders inline using the public repos — no redirects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="writeup-modal" id="writeup-modal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-dialog tilt-card" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close writeup">&times;</button>
+      <div class="modal-header">
+        <p class="label" id="writeup-modal-event">Writeup</p>
+        <h3 id="writeup-modal-title">Select a challenge</h3>
+        <a class="inline-link" id="writeup-modal-raw" href="#" target="_blank" rel="noreferrer">View raw markdown</a>
+      </div>
+      <div class="modal-body" id="writeup-modal-body">
+        <p>Open any challenge to preview the full markdown writeup here.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>"Learning, Living, and Levelling Up."</p>
+      <div class="social-links">
+        <a href="https://discordapp.com/users/904280755734196224" target="_blank" rel="noreferrer">Discord</a>
+        <a href="https://www.instagram.com/inv1s1bl3.hx/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/om-honrao-aka-invisible/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/1nv1sibl3" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:contact@inv1s1bl3.xyz">Email</a>
+        <a href="https://steamcommunity.com/id/Inv1s1bl3_hx/" target="_blank" rel="noreferrer">Steam</a>
+      </div>
+      <p>2025 © Inv1s1bl3. All vibes preserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+{
+  "events": [
+    {
+      "name": "Bsides Mumbai CTF 2025",
+      "repo": "https://github.com/1nv1sibl3/Bsidesmumbai-2025-Writeups",
+      "rawBase": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main",
+      "categories": [
+        {
+          "name": "Cloud",
+          "challenges": [
+            {
+              "title": "THEAMI - Cloud ",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/cloud/THEAMI%20-%20Cloud%20.md"
+            },
+            {
+              "title": "Versionzero - Cloud",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/cloud/Versionzero%20-%20Cloud.md"
+            },
+            {
+              "title": "Wrath of the Sky Serpent- Cloud",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/cloud/Wrath%20of%20the%20Sky%20Serpent-%20Cloud.md"
+            }
+          ]
+        },
+        {
+          "name": "Crypto",
+          "challenges": [
+            {
+              "title": "Diff_EQ - Revenge - Crypto",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/crypto/Diff_EQ%20-%20Revenge%20-%20Crypto.md"
+            },
+            {
+              "title": "Too Small I Guess - Crypto",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/crypto/Too%20Small%20I%20Guess%20-%20Crypto.md"
+            },
+            {
+              "title": "Trixie Prixie - Crypto",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/crypto/Trixie%20Prixie%20-%20Crypto.md"
+            }
+          ]
+        },
+        {
+          "name": "Forensics",
+          "challenges": [
+            {
+              "title": "Author Ki PFP - Forens",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/forensics/Author%20Ki%20PFP%20-%20Forens.md"
+            },
+            {
+              "title": "Disk Message - Forens",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/forensics/Disk%20Message%20-%20Forens.md"
+            },
+            {
+              "title": "Disk Message 2 - Forens",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/forensics/Disk%20Message%202%20-%20Forens.md"
+            },
+            {
+              "title": "Logarithms - Forens",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/forensics/Logarithms%20-%20Forens.md"
+            }
+          ]
+        },
+        {
+          "name": "Misc",
+          "challenges": [
+            {
+              "title": "BADC0DE - Misc",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/misc/BADC0DE%20-%20Misc.md"
+            },
+            {
+              "title": "Feedback - Misc",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/misc/Feedback%20-%20Misc.md"
+            },
+            {
+              "title": "Sanity - Misc",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/misc/Sanity%20-%20Misc.md"
+            },
+            {
+              "title": "Takiya - Misc",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/misc/Takiya%20-%20Misc.md"
+            }
+          ]
+        },
+        {
+          "name": "Reversing",
+          "challenges": [
+            {
+              "title": "Diff_EQ - Rev",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/Reversing/Diff_EQ%20-%20Rev.md"
+            },
+            {
+              "title": "idkwhattonamethis - Rev",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/Reversing/idkwhattonamethis%20-%20Rev.md"
+            },
+            {
+              "title": "idkwhattonamethis2 - Rev",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/Reversing/idkwhattonamethis2%20-%20Rev.md"
+            },
+            {
+              "title": "idkwhattonamethis3 - Rev",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/Reversing/idkwhattonamethis3%20-%20Rev.md"
+            },
+            {
+              "title": "XORyy - Rev",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/Reversing/XORyy%20-%20Rev.md"
+            }
+          ]
+        },
+        {
+          "name": "Web",
+          "challenges": [
+            {
+              "title": "Operation Overflow - Web",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/web/Operation%20Overflow%20-%20Web.md"
+            },
+            {
+              "title": "Phantom-Binding - Web",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/web/Phantom-Binding%20-%20Web.md"
+            },
+            {
+              "title": "Tick Tock - Web",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/web/Tick%20Tock%20-%20Web.md"
+            },
+            {
+              "title": "Worthless - Web",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/Bsidesmumbai-2025-Writeups/main/web/Worthless%20-%20Web.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DevCTF",
+      "repo": "https://github.com/1nv1sibl3/DevCTF",
+      "rawBase": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main",
+      "categories": [
+        {
+          "name": "ExcessChars",
+          "challenges": [
+            {
+              "title": "README",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main/ExcessChars/README.md"
+            }
+          ]
+        },
+        {
+          "name": "GoodOldDays",
+          "challenges": [
+            {
+              "title": "README",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main/GoodOldDays/README.md"
+            }
+          ]
+        },
+        {
+          "name": "PinBreak",
+          "challenges": [
+            {
+              "title": "README",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main/PinBreak/README.md"
+            }
+          ]
+        },
+        {
+          "name": "The Sequel",
+          "challenges": [
+            {
+              "title": "README",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main/The%20Sequel/README.md"
+            }
+          ]
+        },
+        {
+          "name": "UnChangeablePasswords",
+          "challenges": [
+            {
+              "title": "README",
+              "rawUrl": "https://raw.githubusercontent.com/1nv1sibl3/DevCTF/main/UnChangeablePasswords/README.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
