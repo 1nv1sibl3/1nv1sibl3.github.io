@@ -74,7 +74,7 @@
             <a class="btn ghost" href="writeups.html">Read writeups</a>
           </div>
           <ul class="hero-tags">
-            <li><a href="https://blitzhack.xyz" target="_blank" rel="noreferrer">Team BlitzHack · Top 5 CTF team in India</a></li>
+            <li><a href="https://blitzhack.xyz" target="_blank" rel="noreferrer">Team BlitzHack · Top 5 in India (CTFtime)</a></li>
             <li>Won major CTFs (Bsides Mumbai, InCTFj, VishwaCTF, Pragyan CTF)</li>
             <li>Host of OSCTF & BlitzCTF · 4k+ hackers between both events</li>
           </ul>
@@ -101,82 +101,55 @@
               <p>Currently architecting <strong>TourneyPlus.xyz</strong>, an esports tournament manager gearing up to be registered as a company.</p>
             </div>
           </div>
-          <div class="hero-orbs" aria-hidden="true">
-            <span class="orb orb-one"></span>
-            <span class="orb orb-two"></span>
-            <span class="orb orb-three"></span>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section command-center" id="command">
-      <div class="container command-grid">
-        <article class="command-console tilt-card" aria-live="polite">
+    <section class="section challenge-lab" id="ctf-lab">
+      <div class="container challenge-grid">
+        <article class="challenge-brief tilt-card">
+          <p class="label">CTF warm-up</p>
+          <h2>Mini challenge: Crack the signal</h2>
+          <p>
+            This is how most of my CTF blocks start — small breadcrumbs that snowball into a full exploit. Pop open the
+            micro terminal, read the files, base64 decode the payload and submit the flag.
+          </p>
+          <ol class="challenge-steps">
+            <li>Use the terminal to <code>ls</code> + <code>cat</code> the intercepted files.</li>
+            <li>Run <code>python3 decode.py signal.enc</code> to generate <code>signal.dec</code>.</li>
+            <li>Finish with <code>cat signal.dec | base64 -d</code> and submit <code>inv1s1bl3{...}</code>.</li>
+          </ol>
+          <p class="intel-tip">Need a nudge? Use the mini terminal commands (<code>help</code>, <code>ls</code>, <code>cat</code>) to peel back layers.</p>
+        </article>
+        <article class="challenge-panel tilt-card">
           <header class="console-header">
             <span class="pulse"></span>
-            Live Terminal
+            Submit flag
           </header>
-          <div class="console-screen" id="console-screen">
-            <p>&gt; Boot sequence complete. Awaiting input...</p>
-          </div>
-          <form class="console-form" id="console-form">
-            <span>&gt;</span>
-            <input type="text" id="console-input" placeholder="try: scan, creds, ops, stacks, ping" autocomplete="off" />
-            <button type="submit">run</button>
+          <p id="challenge-status">Status: awaiting signal...</p>
+          <form class="challenge-form" id="challenge-form">
+            <input type="text" id="challenge-input" placeholder="inv1s1bl3{...}" autocomplete="off" />
+            <button type="submit">Unlock</button>
           </form>
-          <div class="command-hints">
-            <button type="button" data-command="scan">scan</button>
-            <button type="button" data-command="creds">creds</button>
-            <button type="button" data-command="ops">ops</button>
-            <button type="button" data-command="stacks">stacks</button>
-            <button type="button" data-command="ping">ping</button>
+          <div class="challenge-output" id="challenge-output">
+            <p>Tip: use the mini terminal below. <code>help</code> lists commands like <code>ls</code>, <code>cat</code>,
+              <code>python3 decode.py signal.enc</code>, <code>cat signal.dec | base64 -d</code>, <code>version</code>.</p>
           </div>
-        </article>
-        <article class="intel-panel tilt-card">
-          <p class="label">Quick intel</p>
-          <ul class="intel-list">
-            <li>
-              <div>
-                <strong>CTF uptime</strong>
-                <p>4+ yrs solving, hosting, mentoring.</p>
-              </div>
-              <span>99.9%</span>
-            </li>
-            <li>
-              <div>
-                <strong>CTF nodes</strong>
-                <p>OSCTF · BlitzCTF · Bsides Mumbai · DevCTF</p>
-              </div>
-              <span>ACTIVE</span>
-            </li>
-            <li>
-              <div>
-                <strong>Minecraft infra</strong>
-                <p>Capital Realm, Among Us India, plugin pilot</p>
-              </div>
-              <span>140k+</span>
-            </li>
-          </ul>
-          <div class="intel-grid">
-            <div class="intel-node" data-signal="ctf">
-              <span>CTF</span>
-              <small>Top 5 team</small>
+          <div class="mini-terminal tilt-card" id="lab-terminal-wrapper">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="terminal-title">inv1s1bl3 shell</p>
             </div>
-            <div class="intel-node" data-signal="esports">
-              <span>Ops</span>
-              <small>TourneyPlus</small>
+            <div class="mini-terminal-screen" id="lab-terminal">
+              <p>ctf@inv1s1bl3:~$ Terminal booted. Type <code>help</code> to view commands.</p>
             </div>
-            <div class="intel-node" data-signal="minecraft">
-              <span>MC</span>
-              <small>PluginPilot</small>
-            </div>
-            <div class="intel-node" data-signal="automation">
-              <span>Auto</span>
-              <small>Bots & scripts</small>
-            </div>
+            <form class="mini-terminal-form" id="terminal-form">
+              <span>ctf@inv1s1bl3:~$</span>
+              <input type="text" id="terminal-input" autocomplete="off" />
+            </form>
           </div>
-          <p class="intel-tip">Hover nodes to pulse; more intel unlocks via commands.</p>
         </article>
       </div>
     </section>
@@ -530,6 +503,23 @@
       </div>
     </section>
   </main>
+
+  <div class="clock-overlay tilt-card" id="clock-widget" aria-live="polite">
+    <div class="clock-header">
+      <p class="label">System clock</p>
+      <div class="clock-controls">
+        <button type="button" data-action="min" aria-label="Minimize clock">-</button>
+        <button type="button" data-action="max" aria-label="Maximize clock">+</button>
+      </div>
+    </div>
+    <p class="clock-time" id="clock-time">00:00:00</p>
+    <p class="clock-date" id="clock-date">--</p>
+    <div class="clock-modes" id="clock-modes">
+      <button type="button" data-zone="local" class="active">LOCAL</button>
+      <button type="button" data-zone="utc">UTC</button>
+      <button type="button" data-zone="ist">IST</button>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container footer-grid">

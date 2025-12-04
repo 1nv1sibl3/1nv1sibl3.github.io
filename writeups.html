@@ -61,11 +61,6 @@
               <p>Bsides Mumbai 2025 · DevCTF · More coming soon.</p>
             </div>
           </div>
-          <div class="hero-orbs" aria-hidden="true">
-            <span class="orb orb-one"></span>
-            <span class="orb orb-two"></span>
-            <span class="orb orb-three"></span>
-          </div>
         </div>
       </div>
     </section>
@@ -84,6 +79,23 @@
       </div>
     </section>
   </main>
+
+  <div class="clock-overlay tilt-card" id="clock-widget" aria-live="polite">
+    <div class="clock-header">
+      <p class="label">System clock</p>
+      <div class="clock-controls">
+        <button type="button" data-action="min" aria-label="Minimize clock">-</button>
+        <button type="button" data-action="max" aria-label="Maximize clock">+</button>
+      </div>
+    </div>
+    <p class="clock-time" id="clock-time">00:00:00</p>
+    <p class="clock-date" id="clock-date">--</p>
+    <div class="clock-modes" id="clock-modes">
+      <button type="button" data-zone="local" class="active">LOCAL</button>
+      <button type="button" data-zone="utc">UTC</button>
+      <button type="button" data-zone="ist">IST</button>
+    </div>
+  </div>
 
   <div class="writeup-modal" id="writeup-modal" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
